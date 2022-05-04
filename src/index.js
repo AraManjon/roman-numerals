@@ -8,11 +8,22 @@ export function giveRomanNumber (arabicNumber) {
         500: 'D',
         1000: 'M'
     }
-    if (arabicNumber === 3) {
-        return romanNumbers[1] + romanNumbers[1] + romanNumbers[1] 
-    }
+
     if (arabicNumber === 2) {
         return romanNumbers[1] + romanNumbers[1]
     }
+
+    if (arabicNumber === 3) {
+        return romanNumbers[1] + romanNumbers[1] + romanNumbers[1] 
+    }
+
+    if (arabicNumber === 6) {
+        return romanNumbers[5] + romanNumbers[1]
+    }
+
+    if (arabicNumber === 7) {
+        return romanNumbers[5] + romanNumbers[1] + romanNumbers[1]
+    }
+
     return romanNumbers[arabicNumber]
 }
