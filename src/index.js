@@ -1,4 +1,7 @@
 export function giveRomanNumber (arabicNumber) {
+    if (50 === arabicNumber) {
+        return 'L'
+    }
     if(5 === arabicNumber) {
         return 'V'
     }
