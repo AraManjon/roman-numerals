@@ -36,3 +36,11 @@ test('Given a 50 number when givenRomanNumber is called with this should return 
 
     expect(result).toBe('L')
 })
+
+test('Given a 2 number when givenRomanNumber is called with this should return II', () => {
+    const value = 2
+
+    const result = giveRomanNumber(value)
+
+    expect(result).toBe('II')
+})
