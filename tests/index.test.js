@@ -44,3 +44,11 @@ test('Given a 2 number when givenRomanNumber is called with this should return I
 
     expect(result).toBe('II')
 })
+
+test('Given a 3 number when givenRomanNumber is called with this should return III', () => {
+    const value = 3
+
+    const result = giveRomanNumber(value)
+
+    expect(result).toBe('III')
+})
