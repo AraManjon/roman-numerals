@@ -20,3 +20,11 @@ test('Given a 1 number when givenRomanNumber is called with this should return I
 
     expect(result).toBe('I')
 })
+
+test('Given a 5 number when givenRomanNumber is called with this should return V', () => {
+    const value = 5
+
+    const result = giveRomanNumber(value)
+
+    expect(result).toBe('V')
+})
