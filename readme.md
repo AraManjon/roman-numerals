@@ -16,4 +16,11 @@ Write a function to convert Arabic numbers to Roman numerals as best as you can.
 To run test:
 > jest
 
+### Dependencies
+
+- jest
+- babel
+
+### You need node installed to use this program
+
 
