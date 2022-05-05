@@ -74,3 +74,26 @@ test('Given a 8 number when givenRomanNumber is called with this should reeturn 
 
     expect(result).toBe('VIII')
 })
+
+test('Given a 11 number when givenRomanNumber is called with this should return XI', () => {
+    const value = 11
+
+    const result = giveRomanNumber(value)
+
+    expect(result).toBe('XI')
+})
+test('Given a 12 number when givenRomanNumber is called with this should return XII', () => {
+    const value = 12
+
+    const result = giveRomanNumber(value)
+
+    expect(result).toBe('XII')
+})
+
+test('Given a 13 number when givenRomanNumber is called with this should reeturn XIII', ()=> {
+    const value = 13
+
+    const result = giveRomanNumber(value)
+
+    expect(result).toBe('XIII')
+})

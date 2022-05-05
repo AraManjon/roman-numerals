@@ -9,6 +9,7 @@ export function giveRomanNumber (arabicNumber) {
         500: 'D',
         1000: 'M'
     }
+    
 
     if (arabicNumber === 2) {
         return romanNumbers[2]
@@ -25,8 +26,21 @@ export function giveRomanNumber (arabicNumber) {
     if (arabicNumber === 7) {
         return romanNumbers[5] + romanNumbers[2]
     }
+
     if (arabicNumber === 8) {
         return romanNumbers[5] + romanNumbers[1] + romanNumbers[2]
+    }
+
+    if (arabicNumber === 11) {
+        return romanNumbers[10] + romanNumbers[1]
+    }
+
+    if (arabicNumber === 12) {
+        return romanNumbers[10] + romanNumbers[2]
+    }
+    
+    if (arabicNumber === 13) {
+        return romanNumbers[10] + romanNumbers[1] + romanNumbers[2]
     }
 
     return romanNumbers[arabicNumber]
