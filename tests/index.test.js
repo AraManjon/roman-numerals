@@ -66,3 +66,11 @@ test('Given a 7 number when givenRomanNumber is called with this should return V
 
     expect(result).toBe('VII')
 })
+
+test('Given a 8 number when givenRomanNumber is called with this should reeturn VIII', ()=> {
+    const value = 8
+
+    const result = giveRomanNumber(value)
+
+    expect(result).toBe('VIII')
+})
