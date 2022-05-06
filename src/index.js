@@ -1,25 +1,15 @@
-export function giveRomanNumber (arabicNumber) {
-    const romanNumbers = {
-        1:'I',
-        4: 'IV',
-        5: 'V',
-        9: 'IX',
-        10: 'X',
-        40: 'XL',
-        50: 'L',
-        90: 'XC', 
-        100: 'C', 
-        400: 'CD',
-        500: 'D',
-        900: 'CM',
-        1000: 'M',
-    }
+import { ROMAN_SYMBOL } from './romanSymbol';
 
-    if (romanNumbers[arabicNumber]) return romanNumbers[arabicNumber]
+const findFirstRomaNum = (arabicNumber) => {
+	const romanNums = Object.keys(ROMAN_SYMBOL).reverse();
+    return romanNums.find((romanNum) => arabicNumber > romanNum);
+}
 
-    const romanNums = Object.keys(romanNumbers).reverse()
-    const giveRomanNumFirstSign = romanNums.find(romanNum => arabicNumber > romanNum)
+export function convertToRomanNumber(arabicNumber) {
 
+	if (ROMAN_SYMBOL[arabicNumber]) return ROMAN_SYMBOL[arabicNumber];
 
-    return romanNumbers[giveRomanNumFirstSign] + giveRomanNumber(arabicNumber - giveRomanNumFirstSign)
+	const firstRomanNum = findFirstRomaNum(arabicNumber)
+
+	return ROMAN_SYMBOL[firstRomanNum] + convertToRomanNumber(arabicNumber - firstRomanNum);
 }
