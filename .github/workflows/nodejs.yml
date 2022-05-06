@@ -1,11 +1,13 @@
-name: Node CI
+name: Continuous Integration
 
 on: [push]
 
 jobs:
-  test:
+  ci_test:
     runs-on: ubuntu-latest 
     steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
       - name: npm install
         run: |
           npm install
