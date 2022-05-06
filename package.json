@@ -4,9 +4,7 @@
     "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.10",
     "@babel/preset-env": "^7.17.10",
-    "babel-jest": "^28.0.3",
     "jest": "^28.0.3"
   }
 }
